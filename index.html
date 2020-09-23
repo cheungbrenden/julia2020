@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Julia!</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="title" class="gradient-border">Happy<br>Birthday<br>Julia!</div>
+<div class="navbar">
+    <!--Home, Friends, Coding, Skateboarding, Chess, Gaming, Misc. Photos and Videos-->
+    <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+    <button class="tablinks" onclick="openTab(event, 'Isaac')">Isaac</button>
+    <button class="tablinks" onclick="openTab(event, 'Kiera')">Kiera</button>
+    <button class="tablinks" onclick="openTab(event, 'Skateboarding')">Person</button>
+    <button class="tablinks" onclick="openTab(event, 'Chess')">Person</button>
+    <button class="tablinks" onclick="openTab(event, 'Gaming')">Person</button>
+    <button class="tablinks" onclick="openTab(event, 'Misc. Photos and Videos')">Person</button>
+    <button class="tablinks" onclick="openTab(event, 'Submission Form')">Misc. Photos and Videos</button>
+</div>
+
+<div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>This is the homepage.</p>
+</div>
+
+<div id="Isaac" class="tabcontent">
+    <h3>Isaac Mao</h3>
+    <p>Isaacaweklhfhlaewfaewlaefwblaefwlaefwbkjlawefkjlaefwklaefwbkjaefwaefwebklaefwklaefwhklaefwbklaefwlefw
+    aewiugfawioufeiuaewfhiuaefwhiuawehfiuaewh
+    awleiyfbawoiefbawifef,afwaefawef.awefaw.efoaweflawe.fa.wfeawflaewf.ewaf.wef</p>
+    <img src="images/test.jpg" alt="xd">
+</div>
+
+<div id="Kiera" class="tabcontent">
+    <h3>Coding</h3>
+    <p>This is the Coding.</p>
+</div>
+
+<div id="Skateboarding" class="tabcontent">
+    <h3>Skateboarding</h3>
+    <p>This is the Skateboarding.</p>
+</div>
+
+<div id="Chess" class="tabcontent">
+    <h3>Chess</h3>
+    <p>This is the Chess.</p>
+</div>
+
+<div id="Gaming" class="tabcontent">
+    <h3>Gaming</h3>
+    <p>This is the Gaming.</p>
+</div>
+
+<div id="Misc. Photos and Videos" class="tabcontent">
+    <h3>Misc. Photos and Videos</h3>
+    <p>This is the Misc. Photos and Videos.</p>
+</div>
+
+<div id="Submission Form" class="tabcontent">
+    <h3>Submission Form</h3>
+    <p>This is the Submission Form.<p>
+</div>
+
+
+
+<script>
+
+    function openTab(evt, category) {
+
+        // Declare all variables
+        let i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(category).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        document.documentElement.scrollTop = 430;
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

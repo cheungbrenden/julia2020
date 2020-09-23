@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: linear-gradient(315deg, #e66465, #9198e5);
+
+}
+
+.navbar {
+    float: left;
+    border: 1px solid #cccccc;
+    background-color: #f1f1f1;
+    width: 25%;
+    height: 1000px;
+    margin:  0 0 80px 70px
+}
+
+/* Style the buttons that are used to open the tab content */
+.navbar button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 18px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+/* Change background color of buttons on hover */
+.navbar button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.navbar button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    width: 65%;
+    border-left: none;
+    height: 1000px;
+    background-color: #f1f1f1;
+    margin: 0 50px 80px 0;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}
+
+#title {
+    border-radius: var(--border-width);
+    padding: 50px 70px 50px 0;
+    margin: 100px 50px 50px 80px;
+    text-align: left;
+
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p, h3, div.gradient-border, button {
+    font-family: 'Lora', serif;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.gradient-border {
+    --border-width: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 35%;
+    height: auto;
+    font-family: Lato, sans-serif;
+    font-size: 4rem;
+    color: #222;
+    background: white;
+    border-radius: var(--border-width);
+}
+.gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
