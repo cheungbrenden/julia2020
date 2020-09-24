@@ -26,7 +26,7 @@
 
 <div id="Home" class="tabcontent">
     <h3>Home</h3>
-    <p>This is the homepage.</p>
+    <p>Hi Julia. This is a compilation of pictures and messages that your friends are dying to show and tell you. <br> <br> Please enjoy! </p>
 
 </div>
 
@@ -228,8 +228,7 @@
         We’ve regressed but anyway. Even though our time at UCLA was cut short, you know you can’t get rid of me that easily ahhaha. I definitely do not express this as
         much as Brenden does and you know this but I was so so lucky to have been able to room with you and spend a big chunk of time at school and even over summer together.
         I know you’ve heard this before but you are actually one of the most genuine and hardworking people I know and I wish nothing but positivity, a dog, more mom jeans,
-        and good music in your future endeavors— happy #nastynineteen lolol I’m sorry that was mega cringe okay I’m done now goodbye<br><br>
-        ⁃	I’m sure you can tell who is writing what
+        and good music in your future endeavors— happy #nastynineteen lolol I’m sorry that was mega cringe okay I’m done now goodbye.
     </p>
     <img class = "singlePic" src="julia2020photos/Joanne/joanne1.JPG" style="width: 60%">
 </div>
@@ -309,19 +308,19 @@
 
         <div class="mySlides">
             <div class="kathrynSlides">
-                <img src="julia2020photos/Kathryn/kathryn2.JPG" style="width: 75%">
+                <img src="julia2020photos/Kathryn/kathryn2.JPG" style="width: 80%">
             </div>
         </div>
 
         <div class="mySlides">
             <div class="kathrynSlides">
-                <img src="julia2020photos/Kathryn/kathryn3.JPG" style="width: 61%">
+                <img src="julia2020photos/Kathryn/kathryn3.JPG">
             </div>
         </div>
 
         <div class="mySlides">
             <div class="kathrynSlides">
-                <img src="julia2020photos/Kathryn/kathryn4.JPG" style="width: 50%">
+                <img src="julia2020photos/Kathryn/kathryn4.JPG" style="width: 90%">
             </div>
         </div>
 
@@ -339,13 +338,13 @@
 
         <div class="mySlides">
             <div class="kathrynSlides">
-                <img src="julia2020photos/Kathryn/kathryn7.JPG" style="width: 75%">
+                <img src="julia2020photos/Kathryn/kathryn7.JPG" style="width: 65%">
             </div>
         </div>
 
         <div class="mySlides">
             <div class="kathrynSlides">
-                <img src="julia2020photos/Kathryn/kathryn8.JPG" style="width: 61%">
+                <img src="julia2020photos/Kathryn/kathryn8.JPG">
             </div>
         </div>
 
@@ -369,13 +368,13 @@
 
         <div class="mySlides">
             <div class="kathrynSlides">
-                <img src="julia2020photos/Kathryn/kathryn12.JPG" style="width: 50%">
+                <img src="julia2020photos/Kathryn/kathryn12.JPG" style="width: 90%">
             </div>
         </div>
 
         <div class="mySlides">
             <div class="kathrynSlides">
-                <img src="julia2020photos/Kathryn/kathryn13.JPG">
+                <img src="julia2020photos/Kathryn/kathryn13.JPG" style="width: 90%">
             </div>
         </div>
 
@@ -388,7 +387,57 @@
 
 <div id="Brenden" class="tabcontent">
     <h3>Brenden Cheung</h3>
-    <p>This is the Misc. Photos and Videos.<p>
+    <p></p>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+            <div class="brendenSlides">
+                <img src="julia2020photos/Brenden/brenden1.JPG">
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="brendenSlides">
+                <img src="julia2020photos/Brenden/brenden2.jpg" style="width: 50%">
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="brendenSlides">
+                <img src="julia2020photos/Brenden/brenden3.jpg" style="width: 50%">
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="brendenSlides">
+                <img src="julia2020photos/Brenden/brenden4.PNG" style="width: 35%">
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="brendenSlides">
+                <img src="julia2020photos/Brenden/brenden5.jpg" style="width: 80%">
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="brendenSlides">
+                <img src="julia2020photos/Brenden/brenden6.PNG" style="width: 35%">
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="brendenSlides">
+                <img src="julia2020photos/Brenden/brneden7.PNG" style="width: 33%">
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+    </div>
+    <br>
 </div>
 
 
@@ -396,13 +445,14 @@
 <script>
     document.getElementById("defaultOpen").click();
 
-    let slideIndex = [1,1,1,1,1];
-    let slideId = ["isaacSlides", "kieraSlides", "richardsonSlides", "eilleenSlides", "kathrynSlides"]
+    let slideIndex = [1,1,1,1,1,1];
+    let slideId = ["isaacSlides", "kieraSlides", "richardsonSlides", "eilleenSlides", "kathrynSlides", "brendenSlides"]
     showSlides(1, 0);
     showSlides(1, 1);
     showSlides(1, 2);
     showSlides(1, 3);
     showSlides(1, 4);
+    showSlides(1, 5);
 
     function plusSlides(n, no) {
         showSlides(slideIndex[no] += n, no);
@@ -442,8 +492,6 @@
 
             document.documentElement.scrollTop = 430;
     }
-
-
 
 </script>
 </body>
